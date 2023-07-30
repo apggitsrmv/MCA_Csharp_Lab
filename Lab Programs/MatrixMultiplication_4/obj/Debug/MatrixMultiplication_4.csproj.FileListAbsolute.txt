@@ -1,0 +1,6 @@
+D:\22pca004 C# lab\Box_1\MatrixMultiplication_4\bin\Debug\MatrixMultiplication_4.exe.config
+D:\22pca004 C# lab\Box_1\MatrixMultiplication_4\bin\Debug\MatrixMultiplication_4.exe
+D:\22pca004 C# lab\Box_1\MatrixMultiplication_4\bin\Debug\MatrixMultiplication_4.pdb
+D:\22pca004 C# lab\Box_1\MatrixMultiplication_4\obj\Debug\MatrixMultiplication_4.csproj.CoreCompileInputs.cache
+D:\22pca004 C# lab\Box_1\MatrixMultiplication_4\obj\Debug\MatrixMultiplication_4.exe
+D:\22pca004 C# lab\Box_1\MatrixMultiplication_4\obj\Debug\MatrixMultiplication_4.pdb

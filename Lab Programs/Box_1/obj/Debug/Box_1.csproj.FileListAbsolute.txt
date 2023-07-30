@@ -1,0 +1,7 @@
+D:\22pca004 C# lab\Box_1\Box_1\bin\Debug\Box_1.exe.config
+D:\22pca004 C# lab\Box_1\Box_1\bin\Debug\Box_1.exe
+D:\22pca004 C# lab\Box_1\Box_1\bin\Debug\Box_1.pdb
+D:\22pca004 C# lab\Box_1\Box_1\obj\Debug\Box_1.csproj.AssemblyReference.cache
+D:\22pca004 C# lab\Box_1\Box_1\obj\Debug\Box_1.csproj.CoreCompileInputs.cache
+D:\22pca004 C# lab\Box_1\Box_1\obj\Debug\Box_1.exe
+D:\22pca004 C# lab\Box_1\Box_1\obj\Debug\Box_1.pdb

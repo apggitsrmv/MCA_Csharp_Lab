@@ -1,0 +1,7 @@
+D:\22pca004 C# lab\Lab Programs\delegates_7\bin\Debug\delegates_7.exe.config
+D:\22pca004 C# lab\Lab Programs\delegates_7\bin\Debug\delegates_7.exe
+D:\22pca004 C# lab\Lab Programs\delegates_7\bin\Debug\delegates_7.pdb
+D:\22pca004 C# lab\Lab Programs\delegates_7\obj\Debug\delegates_7.csproj.AssemblyReference.cache
+D:\22pca004 C# lab\Lab Programs\delegates_7\obj\Debug\delegates_7.csproj.CoreCompileInputs.cache
+D:\22pca004 C# lab\Lab Programs\delegates_7\obj\Debug\delegates_7.exe
+D:\22pca004 C# lab\Lab Programs\delegates_7\obj\Debug\delegates_7.pdb
