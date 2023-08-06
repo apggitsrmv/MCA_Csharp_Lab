@@ -29,6 +29,7 @@ namespace dbconnection_13
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonclear = new System.Windows.Forms.Button();
             this.textBoxrollno = new System.Windows.Forms.TextBox();
@@ -46,6 +47,11 @@ namespace dbconnection_13
             this.label6 = new System.Windows.Forms.Label();
             this.comboBoxsemester = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.dataGridViewDetails = new System.Windows.Forms.DataGridView();
+            this.buttonupdate = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.buttonrefresh = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetails)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonSave
@@ -113,6 +119,7 @@ namespace dbconnection_13
             // 
             // comboBoxcourse
             // 
+            this.comboBoxcourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxcourse.FormattingEnabled = true;
             this.comboBoxcourse.Items.AddRange(new object[] {
             "Select",
@@ -147,6 +154,7 @@ namespace dbconnection_13
             // 
             // comboBoxyear
             // 
+            this.comboBoxyear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxyear.FormattingEnabled = true;
             this.comboBoxyear.Items.AddRange(new object[] {
             "Select",
@@ -214,9 +222,10 @@ namespace dbconnection_13
             // 
             // comboBoxsemester
             // 
+            this.comboBoxsemester.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxsemester.FormattingEnabled = true;
             this.comboBoxsemester.Items.AddRange(new object[] {
-            "Selcet",
+            "Select",
             "1",
             "2",
             "3",
@@ -237,11 +246,52 @@ namespace dbconnection_13
             this.label7.TabIndex = 4;
             this.label7.Text = "SEMESTER:";
             // 
+            // dataGridViewDetails
+            // 
+            this.dataGridViewDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDetails.Location = new System.Drawing.Point(348, 27);
+            this.dataGridViewDetails.Name = "dataGridViewDetails";
+            this.dataGridViewDetails.Size = new System.Drawing.Size(541, 278);
+            this.dataGridViewDetails.TabIndex = 5;
+            this.dataGridViewDetails.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDetails_CellContentClick);
+            // 
+            // buttonupdate
+            // 
+            this.buttonupdate.Location = new System.Drawing.Point(735, 329);
+            this.buttonupdate.Name = "buttonupdate";
+            this.buttonupdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonupdate.TabIndex = 0;
+            this.buttonupdate.Text = "UPDATE";
+            this.buttonupdate.UseVisualStyleBackColor = true;
+            this.buttonupdate.Click += new System.EventHandler(this.buttonupdate_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(429, 329);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "DELETE";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // buttonrefresh
+            // 
+            this.buttonrefresh.Location = new System.Drawing.Point(586, 329);
+            this.buttonrefresh.Name = "buttonrefresh";
+            this.buttonrefresh.Size = new System.Drawing.Size(75, 23);
+            this.buttonrefresh.TabIndex = 0;
+            this.buttonrefresh.Text = "REFRESH";
+            this.buttonrefresh.UseVisualStyleBackColor = true;
+            this.buttonrefresh.Click += new System.EventHandler(this.buttonrefresh_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 364);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(901, 364);
+            this.Controls.Add(this.dataGridViewDetails);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -258,9 +308,15 @@ namespace dbconnection_13
             this.Controls.Add(this.textBoxname);
             this.Controls.Add(this.textBoxrollno);
             this.Controls.Add(this.buttonclear);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonrefresh);
+            this.Controls.Add(this.buttonupdate);
             this.Controls.Add(this.buttonSave);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetails)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,6 +341,10 @@ namespace dbconnection_13
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBoxsemester;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dataGridViewDetails;
+        private System.Windows.Forms.Button buttonupdate;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonrefresh;
     }
 }
 

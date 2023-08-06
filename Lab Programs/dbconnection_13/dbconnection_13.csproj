@@ -47,6 +47,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>srmvcaslogo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -109,14 +112,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resourses\background_1.jpg" />
+    <Content Include="Resourses\srmvcaslogo.ico" />
     <Content Include="Resourses\srmvcaslogo.png" />
-    <Content Include="Resourses\studentsDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resourses\studentsDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>studentsDB.mdf</DependentUpon>
-    </Content>
+    <Content Include="srmvcaslogo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
