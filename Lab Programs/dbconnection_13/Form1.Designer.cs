@@ -49,7 +49,7 @@ namespace dbconnection_13
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridViewDetails = new System.Windows.Forms.DataGridView();
             this.buttonupdate = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonrefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetails)).BeginInit();
             this.SuspendLayout();
@@ -265,15 +265,15 @@ namespace dbconnection_13
             this.buttonupdate.UseVisualStyleBackColor = true;
             this.buttonupdate.Click += new System.EventHandler(this.buttonupdate_Click);
             // 
-            // button2
+            // buttonDelete
             // 
-            this.button2.Location = new System.Drawing.Point(429, 329);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "DELETE";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonDelete.Location = new System.Drawing.Point(429, 329);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
+            this.buttonDelete.TabIndex = 0;
+            this.buttonDelete.Text = "DELETE";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.button2_Click);
             // 
             // buttonrefresh
             // 
@@ -308,7 +308,7 @@ namespace dbconnection_13
             this.Controls.Add(this.textBoxname);
             this.Controls.Add(this.textBoxrollno);
             this.Controls.Add(this.buttonclear);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonrefresh);
             this.Controls.Add(this.buttonupdate);
             this.Controls.Add(this.buttonSave);
@@ -343,7 +343,7 @@ namespace dbconnection_13
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridViewDetails;
         private System.Windows.Forms.Button buttonupdate;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonrefresh;
     }
 }

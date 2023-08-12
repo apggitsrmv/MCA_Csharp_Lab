@@ -22,20 +22,20 @@ namespace dbconnection_13
             // Add an update button column
             DataGridViewButtonColumn updateButtonColumn = new DataGridViewButtonColumn
             {
-                HeaderText = "Update",
-                Text = "Update",
+                HeaderText = "EDIT",
+                Text = "EDIT",
                 UseColumnTextForButtonValue = true
             };
             dataGridViewDetails.Columns.Add(updateButtonColumn);
 
             // Add a delete button column
-            DataGridViewButtonColumn deleteButtonColumn = new DataGridViewButtonColumn
-            {
-                HeaderText = "Delete",
-                Text = "Delete",
-                UseColumnTextForButtonValue = true
-            };
-            dataGridViewDetails.Columns.Add(deleteButtonColumn);
+            //DataGridViewButtonColumn deleteButtonColumn = new DataGridViewButtonColumn
+            //{
+            //    HeaderText = "Delete",
+            //    Text = "Delete",
+            //    UseColumnTextForButtonValue = true
+            //};
+            //dataGridViewDetails.Columns.Add(deleteButtonColumn);
             //this.BackgroundImage = Image.FromFile(@"D:\22pca004 C# lab\MCA_C-_Lab\Lab Programs\dbconnection_13\Resourses\srmvcaslogo.png");
         }
         private void buttonSave_Click(object sender, EventArgs e)
@@ -134,6 +134,9 @@ namespace dbconnection_13
                 comboBoxcourse.Text = "Select";
                 comboBoxsemester.Text = "Select";
                 comboBoxyear.Text = "Select";
+                buttonSave.Enabled = true;
+                buttonupdate.Enabled = false;
+                buttonDelete.Enabled = false;
                 students.rollno = "";
                 students.name = "";
                 students.gender = "";
@@ -207,7 +210,12 @@ namespace dbconnection_13
                     comboBoxcourse.Text = (clickedRow.Cells["course"].Value).ToString();
                     comboBoxsemester.Text =(clickedRow.Cells["semester"].Value).ToString();
                     comboBoxyear.Text = (clickedRow.Cells["year"].Value).ToString();
-                }
+
+
+                        buttonSave.Enabled = false;
+                        buttonupdate.Enabled = true;
+                        buttonDelete.Enabled = true;
+                    }
             }
             }
             catch (Exception Ex)
@@ -284,7 +292,7 @@ namespace dbconnection_13
                     students.semester = comboBoxsemester.Text.ToString();
                     students.year = comboBoxyear.Text.ToString();
 
-                    using (OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\22pca004 C# lab\MCA_C-_Lab\StudentsDB.mdb"))
+                    using (OleDbConnection con = new OleDbConnection(connstring))
                     {
                         con.Open();
                         string sql = "UPDATE StudentDetails SET [name] = ?, [course] = ?, [gender] = ?, [age] = ?, [year] = ?, [semester] = ? WHERE [rollno] = ?";
@@ -314,11 +322,13 @@ namespace dbconnection_13
         private void button2_Click(object sender, EventArgs e)
         {
             DeleteStudent();
+            loaddata();
         }
 
         private void buttonupdate_Click(object sender, EventArgs e)
         {
             UpdateStudent();
+            loaddata();
         }
 
         private void buttonrefresh_Click(object sender, EventArgs e)
