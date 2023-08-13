@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exception_handling_12", "ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbconnection_13", "dbconnection_13\dbconnection_13.csproj", "{024BDA3D-2604-49A4-847D-7CC49004B235}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGrid_15", "DataGrid_15\DataGrid_15.csproj", "{F3158A4C-5C0E-41CC-8625-053E15502F3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{024BDA3D-2604-49A4-847D-7CC49004B235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{024BDA3D-2604-49A4-847D-7CC49004B235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{024BDA3D-2604-49A4-847D-7CC49004B235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3158A4C-5C0E-41CC-8625-053E15502F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3158A4C-5C0E-41CC-8625-053E15502F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3158A4C-5C0E-41CC-8625-053E15502F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3158A4C-5C0E-41CC-8625-053E15502F3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
