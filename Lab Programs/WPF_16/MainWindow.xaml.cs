@@ -27,7 +27,7 @@ namespace WPF_16
         {
             InitializeComponent();
         }
-        private void buttonBrowse_Click(object sender, RoutedEventArgs e)
+        private void ButtonBrowse_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog(); ofd.Filter = "Access 2000-2003 (*.mdb;)|*.mdb";
             ofd.ShowDialog();
