@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <DataGrid x:Name="dataGridViewDetails" HorizontalAlignment="Left" Height="293" Margin="41,116,0,0" VerticalAlignment="Top" Width="709"/>
+        <Button x:Name="ButtonView" Content="View" HorizontalAlignment="Left" Margin="552,64,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="1.684,0.625" AutomationProperties.Name="TextBoxView" Click="ButtonView_Click"/>
+        <Button x:Name="ButtonBrowse" Content="Browse" HorizontalAlignment="Left" Margin="676,64,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="-0.291,0.475" Click="buttonBrowse_Click"/>
+        <TextBox x:Name="TextBoxPath" HorizontalAlignment="Left" Height="23" Margin="41,64,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="483" RenderTransformOrigin="-0.138,0.413"/>
+
     </Grid>
 </Window>
